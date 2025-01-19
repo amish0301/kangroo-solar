@@ -14,7 +14,7 @@ Before you begin, make sure you have the following installed:
 ---
 
 ## 📂 Project Structure
-```bash
+```
   src/
   ├── components/    # Reusable components  
   ├── pages/         # Application pages  
