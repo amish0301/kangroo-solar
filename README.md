@@ -14,13 +14,14 @@ Before you begin, make sure you have the following installed:
 ---
 
 ## 📂 Project Structure
-src/
-├── components/    # Reusable components  
-├── pages/         # Application pages  
-├── assets/        # Images, styles, etc.  
-├── App.js         # Main app component  
-├── index.js       # Entry point  
-
+```bash
+  src/
+  ├── components/    # Reusable components  
+  ├── pages/         # Application pages  
+  ├── assets/        # Images, styles, etc.  
+  ├── App.js         # Main app component  
+  ├── index.js       # Entry point
+```
 
 ## 🚀 Getting Started  
 
