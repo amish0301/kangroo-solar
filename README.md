@@ -36,4 +36,10 @@ src/
   `npm start` or `yarn start`
 
 4. **open your browser and navigate to** 
-  👉 http://localhost:3000
+  👉 http://localhost:5173
+
+
+## Styling Guildelines
+
+- Font Style : ***Poppins***
+- Styling Library: ***TailwindCSS***
