@@ -44,3 +44,14 @@ Before you begin, make sure you have the following installed:
 
 - Font Style : ***Poppins***
 - Styling Library: ***TailwindCSS***
+
+
+## Images
+
+![Hero](./src//assets/images/website/1.png)
+<br />
+![Hero2](./src//assets/images/website/2.png)
+<br />
+![Hero3](./src//assets/images/website/3.png)
+<br />
+![Hero4](./src//assets/images/website/4.png)
