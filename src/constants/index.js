@@ -5,6 +5,7 @@ import {
   FaCheckCircle,
   FaClipboardList,
 } from "react-icons/fa";
+import { TfiGallery as Gallery } from "react-icons/tfi";
 import {
   MdMiscellaneousServices as Services,
   MdOutlineStarBorder as Star,
@@ -28,6 +29,11 @@ export const navLinks = [
     href: "/services",
     icon: Services,
     isDropdown: true,
+  },
+  {
+    name: "Gallery",
+    href: '/gallery',
+    icon: Gallery
   },
   {
     name: "Contact",

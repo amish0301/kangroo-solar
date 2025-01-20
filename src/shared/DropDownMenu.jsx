@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const DropDownMenu = ({ list }) => {
     return (
-        <div className="absolute bg-gray-800 dark:dark-theme border-none top-full left-0 mt-2 dark:dark-theme shadow-lg p-4 rounded-md w-48 border border-gray-200 overflow-hidden z-10">
+        <div className="absolute bg-gray-800 dark:dark-theme border-none top-[90%] left-0 mt-2 dark:dark-theme shadow-lg p-4 rounded-md w-48 border border-gray-200 overflow-hidden z-10">
             <ul className="flex flex-col gap-y-3 justify-start">
                 {
                     list.map((item) => (

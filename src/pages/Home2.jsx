@@ -5,10 +5,12 @@ import bgImg from '../assets/images/whyUs-img.jpg'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import aboutImg from '../assets/images/about_img.webp'
 import ServiceCards from '../shared/ServiceCards';
+import SolarBrands from '../components/SolarBrands';
+import GallerySection from '../components/GallerySection';
 
 const Home2 = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full container'>
       {/* Why Kangroo Solar? */}
       <section className='w-full flex flex-col justify-start gap-y-4 relative'>
         {/* description */}
@@ -40,7 +42,7 @@ const Home2 = () => {
         {/* desc */}
         <div className='w-full md:w-1/2 p-4'>
           <h2 className='font-semibold text-xl sm:text-2xl md:text-4xl py-4'>About Kangroo Solar</h2>
-          <p className='my-2 text-sm md:text-base'>
+          <p className='my-2 text-sm md:text-base text-balance'>
             Solar Kangroo is one of the most experienced solar panels companies across Brisbane, Melbourne & sydeny. At Solar Kangroo, we provide the best solar panels, solar batteries, and solar inverters. As top solar providers in Brisbane, Melbourne & Sydney, We self-assuredly stand by our comprehensive solar system with our years of capability and specialisation in the solar industry. By cutting out any middle-person, we offer solar panels in Brisbane, Melbourne & Sydney with affordable solar system deals. Our solar panels in Brisbane cost are highly level-headed with more exceptional system quality. Over the years, we have generated loyal business relationships with finest solar products. Solar system price with us are exceedingly cost-effective. We are considered as the best solar system suppliers & providers in and across Brisbane, Melbourne & Sydney.
           </p>
           <button type="button" className='primary-btn mt-4 cursor-pointer'>
@@ -54,6 +56,20 @@ const Home2 = () => {
       {/* 1 to 1 Service product provides */}
       <ServiceCards list={serviceCardImgDesc} />
 
+
+      {/* Solar brand we install */}
+      <section className='w-full h-full py-10 border-t-2 border-b-2 border-gray-300'>
+        <div className='w-full pt-6'>
+          <h2 className='text-xl md:text-2xl font-semibold text-center pt-5'>Solar Brands We Install</h2>
+          <SolarBrands />
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <GallerySection />
+
+      {/* Testimonials */}
+      
     </div>
   )
 }

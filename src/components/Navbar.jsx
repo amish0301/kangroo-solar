@@ -28,7 +28,7 @@ const TopBar = () => {
   }, []);
 
   return (
-    <div ref={topbarRef} className="fade-out border underline-offset-auto fixed top-0 left-0 w-full bg-white flex justify-between items-center md:px-28 py-2 z-50 transition-all duration-300 ease-in-out">
+    <div ref={topbarRef} className="fade-out border underline-offset-auto fixed top-0 left-0 w-full bg-white flex justify-between items-center md:px-28 py-4 z-50 transition-all duration-300 ease-in-out">
       <Link to={'/'} className='flex items-center w-1/4'>
         {/* <img src={logo} aria-labelledby='company-logo' alt="Company Logo" className='h-14 w-auto inline-block' /> */}
         <span className="font-bold text-2xl">Kangroo Solar</span>

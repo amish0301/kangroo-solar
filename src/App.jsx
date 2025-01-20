@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom"
 import AppLayout from "./components/AppLayout"
-import { Home, NotFoundPage, Contact, About } from "./pages/index"
+import { Home, NotFoundPage, Contact, About, Gallery } from "./pages/index"
 
 
 function App() {
@@ -9,9 +9,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<AppLayout />} >
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" index element={<Home />}></Route>
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="gallery" element={<Gallery />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
