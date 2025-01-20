@@ -10,6 +10,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -35,10 +41,22 @@
   @apply bg-black text-white;
 }
 
+.primary-btn {
+  @apply relative inline-flex items-center bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300 text-white rounded-lg py-3 px-6 transition-all duration-200 min-w-fit
+}
+
 .text-primary {
   @apply text-white;
 }
 
 .hover-link {
   @apply hover:text-blue-600;
+}
+
+.fade-out {
+  @apply translate-y-0 transition-all duration-300 ease-in-out opacity-100
+}
+
+.hidden-bar {
+  @apply opacity-0 -translate-y-full transition-all duration-300 ease-in-out;
 }

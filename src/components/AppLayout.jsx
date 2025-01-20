@@ -6,7 +6,10 @@ const AppLayout = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      {/* just remove below px-28 to make it full */}
+      <div className='pt-28 md:px-28 mx-auto'>    
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )
