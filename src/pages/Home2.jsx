@@ -7,6 +7,8 @@ import aboutImg from '../assets/images/about_img.webp'
 import ServiceCards from '../shared/ServiceCards';
 import SolarBrands from '../components/SolarBrands';
 import GallerySection from '../components/GallerySection';
+import SolarBatteryStorage from '../components/SolarBatteryStorage';
+import Testimonials from '../components/Testimonials';
 
 const Home2 = () => {
   return (
@@ -53,6 +55,9 @@ const Home2 = () => {
 
       </section>
 
+      {/* Solar battery & Storage / Discount Component */}
+      <SolarBatteryStorage />
+
       {/* 1 to 1 Service product provides */}
       <ServiceCards list={serviceCardImgDesc} />
 
@@ -69,7 +74,8 @@ const Home2 = () => {
       <GallerySection />
 
       {/* Testimonials */}
-      
+      <Testimonials />
+
     </div>
   )
 }

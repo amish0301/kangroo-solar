@@ -55,3 +55,7 @@ Before you begin, make sure you have the following installed:
 ![Hero3](./src//assets/images/website/3.png)
 <br />
 ![Hero4](./src//assets/images/website/4.png)
+<br />
+![Solar Brands](./src/assets/images/website/5.png)
+<br />
+![Gallery](./src/assets/images/website/6.png)
