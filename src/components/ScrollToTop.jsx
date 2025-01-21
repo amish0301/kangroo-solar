@@ -23,7 +23,7 @@ const ScrollToTop = () => {
     return (
         <>
             <button
-                className={`fixed bottom-5 right-5 z-[9999] w-12 h-12 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full flex items-center justify-center shadow-lg transform transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                className={`fixed bottom-5 right-5 z-[100] w-12 h-12 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full flex items-center justify-center shadow-lg transform transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     } hover:scale-110`}
                 onClick={handleScrollToTop}
                 aria-label="Scroll to Top"

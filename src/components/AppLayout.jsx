@@ -9,7 +9,7 @@ const AppLayout = () => {
       <Navbar />
       <ScrollToTop />
       {/* just remove below px-28 to make it full */}
-      <div className='pt-28 md:px-28 mx-auto '>    
+      <div className='md:pt-28 md:px-28 mx-auto'>    
         <Outlet />
       </div>
       <Footer />
