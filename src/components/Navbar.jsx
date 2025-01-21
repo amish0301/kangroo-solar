@@ -185,6 +185,7 @@ const Navbar = () => {
             {navLinks.map((item, index) => (
               <li
                 key={item.name}
+                onClick={() => setIsMenuOpen(false)}
                 className={`relative list-none group flex flex-col w-full ${location.pathname === item.href
                   ? 'bg-blue-600 text-white'
                   : 'text-gray-300 hover:text-blue-500'
