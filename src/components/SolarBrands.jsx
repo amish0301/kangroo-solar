@@ -8,18 +8,23 @@ import brd6 from '../assets/images/solar-brands/6.webp'
 import brd7 from '../assets/images/solar-brands/8.avif'
 import brd8 from '../assets/images/solar-brands/9.avif'
 import brd9 from '../assets/images/solar-brands/10.webp'
+import { useInView } from 'react-intersection-observer';
 
 
 const SolarBrands = () => {
 
     const scrollContainerRef = useRef(null);
-
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+      });
+      
     useEffect(() => {
         const handleScroll = (event) => {
             if (!scrollContainerRef.current) return;
 
             // Get the current scroll position
-            const scrollAmount = event.deltaY > 0 ? 40 : -40;
+            const scrollAmount = event.deltaY > 0 ? 350 : -350;
 
             // Smoothly scroll horizontally
             scrollContainerRef.current.scrollBy({
@@ -37,27 +42,39 @@ const SolarBrands = () => {
     }, []);
 
     return (
-        <section ref={scrollContainerRef} className='w-full flex overflow-x-auto gap-4 mt-5 py-10 scroll-smooth' aria-labelledby='solar-brands' style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-            <div className='max-w-sm border shadow-lg border-none rounded-lg p-4 flex-shrink-0'>
-                <img src={brd1} alt="brand-img" className='h-full w-full object-contain' />
-            </div>
-            <div className='max-w-sm border shadow-lg rounded-lg border-none p-4 flex-shrink-0'><img src={brd2} alt="brand-img" className='h-full w-full object-contain' /></div>
-            <div className='max-w-sm border shadow-lg rounded-lg border-none p-4 flex-shrink-0'><img src={brd3} alt="brand-img" className='h-full w-full object-contain' /></div>
-            <div className='max-w-sm border shadow-lg rounded-lg border-none p-4 flex-shrink-0'><img src={brd4} alt="brand-img" className='h-full w-full object-contain ' /></div>
-            <div className='max-w-sm border shadow-lg rounded-lg border-none p-4 flex-shrink-0'><img src={brd5} alt="brand_1" className='h-full w-full object-contain ' /></div>
-            <div className='max-w-sm border shadow-lg rounded-lg border-none p-4 flex-shrink-0'>
-                <img src={brd6} alt="brand-img" className='h-full w-full object-contain ' />
-            </div>
-            <div className='max-w-sm border shadow-lg rounded-lg border-none p-4 flex-shrink-0'>
-                <img src={brd7} alt="brand-img" className='h-full w-full object-contain ' />
-            </div>
-            <div className='max-w-sm border shadow-lg rounded-lg border-none p-4 flex-shrink-0'>
-                <img src={brd8} alt="brand-img" className='h-full w-full object-contain' />
-            </div>
-            <div className='max-w-sm border shadow-lg rounded-lg border-none p-4 flex-shrink-0'>
-                <img src={brd9} alt="brand-img" className='h-full w-full object-contain' />
-            </div>
-        </section>
+        <div ref={ref} className={`fade-in ${inView ? 'fade-in-visible' : ''}`}>
+            <h2 className='text-xl md:text-2xl font-semibold text-center pt-5'>Solar Brands We Install</h2>
+            <section
+                ref={scrollContainerRef}
+                className="w-full flex overflow-x-auto gap-4 my-10 py-10 md:py-15 scroll-smooth"
+                aria-labelledby="solar-brands"
+                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+                {[
+                    brd1,
+                    brd2,
+                    brd3,
+                    brd4,
+                    brd5,
+                    brd6,
+                    brd7,
+                    brd8,
+                    brd9,
+                ].map((brand, index) => (
+                    <div
+                        key={index}
+                        className="min-w-[200px] max-w-[250px] md:max-w-sm border shadow-lg rounded-lg p-4 flex-shrink-0"
+                    >
+                        <img
+                            src={brand}
+                            alt={`brand-img-${index + 1}`}
+                            loading='lazy'
+                            className="h-40 w-full object-contain md:h-48 lg:h-56"
+                        />
+                    </div>
+                ))}
+            </section>
+        </div>
     )
 }
 

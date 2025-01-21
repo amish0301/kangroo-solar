@@ -5,3 +5,4 @@ export { default as SolarBrands } from "./SolarBrands.jsx";
 export { default as GallerySection } from "./GallerySection.jsx";
 export { default as SolarBatteryStorage } from "./SolarBatteryStorage.jsx";
 export { default as Testimonials } from "./Testimonials.jsx";
+export { default as ProductAndService } from "./ProductAndService.jsx";

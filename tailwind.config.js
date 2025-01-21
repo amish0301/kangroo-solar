@@ -10,6 +10,12 @@ export default {
       animation: {
         "gradient-y": "gradientY 3s ease-in-out infinite",
       },
+      transitionProperty: {
+        'opacity-transform': 'opacity, transform',
+      },
+      transformOrigin: {
+        "rotate-y-180": "rotateY(180deg)",
+      },
       keyframes: {
         gradientY: {
           "0%": {

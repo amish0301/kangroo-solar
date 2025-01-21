@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <div className='min-h-screen flex items-center px-20 bg-[#f9fafe]'>
       <div className='w-1/2 hidden md:block ml-20'>
-        <img src={notFoundImg} alt="404Page" className='object-cover h-50' />
+        <img src={notFoundImg} alt="404Page" loading='lazy' className='object-cover h-50' />
       </div>
       <div className='w-full md:w-1/2 flex-col items-start space-y-2'>
         <div>

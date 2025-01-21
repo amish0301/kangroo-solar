@@ -106,3 +106,27 @@ export const serviceCardImgDesc = [
     img: "../assets/images/solar_rebate.webp"
   },
 ];
+
+export const testimonials = [
+  {
+    clientName: 'John Doe',
+    desc: 'I was so happy with these guys .the installation team are a fantastic crew .I have never in my 60 years seen such a well tuned team , so organized and professional . Plus they are very polite worked well together and left no mess. Thanks guys very happy and well done. My son recommended them to me and I will continue to tell all my friends',
+    img: '../assets/images/c-1.webp'
+  },
+  {
+    clientName: 'Wayne Brenan',
+    desc: 'Amazing service. The guys were polite and explained everything in simple terms. Highly recommended. We were referred to Solar Masters by a friend and no regrets. Especially after hearing some horror stories of other companies. I wouldn’t hesitate passing on the number to family or friends.',
+    img: '../assets/images/c-2.webp'
+  },
+  {
+    clientName: 'Azzy Scott',
+    desc: 'Amazing service. The guys were polite and explained everything in simple terms. Highly recommended. We were referred to Solar Masters by a friend and no regrets. Especially after hearing some horror stories of other companies. I wouldn’t hesitate passing on the number to family or friends.',
+    img: '../assets/images/c-3.webp'
+  },
+  {
+    clientName: 'John Doe',
+    img: '../assets/images/c-4.webp',
+    desc: 'Their attention to detail and customer-first approach is unmatched. I\'m thrilled with the results!',
+    designation: 'CEO, Bakely\'s Pvt Ltd'
+  }
+];
