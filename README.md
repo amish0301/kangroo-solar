@@ -34,7 +34,7 @@ Before you begin, make sure you have the following installed:
   `npm install` or `yarn install`
 
 3. **Start the development server** 🌐
-  `npm start` or `yarn start`
+  `npm run dev` or `yarn run dev`
 
 4. **open your browser and navigate to** 
   👉 http://localhost:5173
